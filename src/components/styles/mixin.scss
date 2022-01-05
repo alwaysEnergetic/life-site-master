@@ -1,0 +1,55 @@
+/**
+ * ===== 16/3/2020 ======
+ * ===CREADED BY CHRIS===
+ * ===== ALL MIXINS =====
+ */
+
+@mixin flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexrow {
+    display: flex;
+}
+
+@mixin alignCenter {
+    @include flexrow;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin alignAround {
+    @include flexrow;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin alignBetween {
+    @include flexrow;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin header_container_flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+}
+
+@mixin carouselOverlayPosition {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+@mixin roundImage ($height:50px, $width:50px, $radius:50px) {
+    height: $height;
+    width: $width;
+    border-radius: $radius;
+}
+
+

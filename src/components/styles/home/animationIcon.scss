@@ -1,0 +1,23 @@
+/**
+ * =============== 16/3/2020 ===============
+ * ============CREADED BY CHRIS=============
+ * == SWEEP TO TOP ANIMATION ICONS STYLES ==
+ */
+
+ @import "../mixin.scss";
+ @import "../animation.scss";
+ @import "../variables.scss";
+
+.animation_icon {
+    border-radius: 4px;
+    @include flexrow;    
+}
+
+.link_icon {    
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    color: $FooterFont_Color;
+    text-align: center;
+}
+

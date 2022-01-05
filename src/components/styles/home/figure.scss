@@ -1,0 +1,13 @@
+/**
+ * ============= 16/3/2020 ============
+ * ==========CREADED BY CHRIS==========
+ * ==== FIGURE IMAGE SECTION STYLE ====
+ */
+
+@import "../mixin.scss";
+
+.figure_container {
+    width: 100%;    
+    flex-direction: column;
+    @include alignCenter;    
+}

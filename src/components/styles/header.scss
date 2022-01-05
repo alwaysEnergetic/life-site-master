@@ -1,0 +1,102 @@
+/**
+ * ===== 16/3/2020 ======
+ * ===CREADED BY CHRIS===
+ * ==== HEADER STYLE ====
+ */
+
+@import "mixin.scss";
+@import "variables.scss";
+@import "animation.scss";
+
+.header_container {
+    @include header_container_flex;    
+    height: 100px;    
+    animation-name: header_animationDown;
+    animation-duration: .5s;
+}
+
+.header_container_scroll {
+    @include header_container_flex;    
+    height: 60px;    
+    animation-name: header_animationUp;
+    animation-duration: .5s;
+    -webkit-box-shadow: $HeaderShadow;
+    -moz-box-shadow: $HeaderShadow;
+    box-shadow: $HeaderShadow;
+}
+ 
+.logo_container {
+    display: flex;    
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100%;
+    border-right: 1px solid $HeaderBorder_Color;
+    @include alignCenter;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav_container {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    @include alignCenter;
+    
+}
+
+.left_container {
+    display: none;
+}
+
+.right_container {
+    display: flex;
+    height: 100%;
+    width: 150px;   
+    border-left: 1px solid $HeaderBorder_Color;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include alignAround;
+}
+
+.menu {
+    height: 100%;
+    padding: 0 20px;
+    @include alignCenter;
+}
+/**
+ * ===== HEADER RESPONSIVE ======
+ */
+@media (max-width:1000px){
+    .nav_container {
+        display: none;
+    }
+
+    .logo_container {
+        width: 90%;
+        border: none;
+    }
+
+    .left_container {
+        display: flex;
+        height: 100%;
+        width: 100px;   
+        border-left: 1px solid $HeaderBorder_Color;
+        padding-left: 0px;
+        padding-right: 0px;
+        @include alignAround;
+    }
+    .logo {
+        height: 30px;
+    }
+
+    .right_container {
+        width: 100px; 
+        padding-left: 0px;
+        padding-right: 0px;
+        border: none;
+    }
+}
+
+

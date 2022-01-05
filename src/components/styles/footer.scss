@@ -1,0 +1,47 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+
+.footer {
+    background-color: $FooterBackground_Color;
+}
+
+.footer_link {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+.footer_link:hover {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: $FooterFontHover_Color;
+}
+
+.footer-left {
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+@media (max-width:760px){
+    .footer-right {
+        display: none;
+    }
+
+    .footer-left>div>p {
+        text-align: center;
+    }
+
+    .footer-left {
+        @include alignCenter;
+        flex-direction: column;
+    }
+}
+
+
+
+

@@ -1,0 +1,45 @@
+/**
+ * ============= 16/3/2020 ============
+ * ==========CREADED BY CHRIS==========
+ * ==== IPAD IMAGE SECTION STYLE ====
+ */
+
+@import "../mixin.scss";
+@import "../variables.scss";
+
+.divider:after {
+    content: '';
+    display: block;
+    margin-top: 30px;
+    width: 40px;
+    border-top: 2px solid $Font16_18_Color;
+}
+
+
+.center_divider {
+    display: flex;
+    justify-content: center;
+}
+
+.center_divider:after {
+    content: '';    
+    margin-top: 30px;
+    width: 40px;
+    border-top: 2px solid $Font16_18_Color;
+}
+
+.button_ipad {    
+    width: 163px;
+    height: 46px;
+    border: 2px solid $Font16_18_Color;
+    background-color: transparent;
+    border-radius: 3px;
+    @include alignCenter;
+}
+
+@media (max-width: 895px) {
+    .overlay_carousel {
+        display: none;
+    }
+}
+

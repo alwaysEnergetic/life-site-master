@@ -1,0 +1,30 @@
+/**
+ * ============= 16/3/2020 ============
+ * ==========CREADED BY CHRIS==========
+ * ======= ALL ANIMATION STYLES =======
+ */
+
+@keyframes header_animationUp {
+    0%   { height: 100px;}    
+    100% { height: 60px;}
+}
+
+@keyframes header_animationDown {
+    0%   { height: 60px;}    
+    100% { height: 100px;}
+}
+
+@keyframes footer_icon_animation_up {
+    0%   { top: 0px;}    
+    100% { top: -30px;}
+}
+
+@keyframes footer_icon_animation_down {
+    0%   { top: -30px;}    
+    100% { top: -0px;}
+}
+
+
+
+
+  

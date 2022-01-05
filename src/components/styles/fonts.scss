@@ -1,0 +1,174 @@
+/**
+ * ===== 16/3/2020 ======
+ * ===CREADED BY CHRIS===
+ * ===== ALL FONTS ======
+ */
+
+@import "./variables.scss";
+
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../assets/fonts/Gilroy-ExtraBold.otf');
+}
+
+.ralewaybold_13 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.ralewaybold_13_444 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: $Font16_18_Color;
+}
+
+.ralewaybold_16 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 1px;
+    color: $Font16_18_Color;
+}
+
+.ralewaybold_16_ccc {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 1px;
+    color: #ccc;
+}
+
+.ralewaybold_22 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #EEE;
+}
+
+.ralewaybold_30 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.ralewaybold_30_white {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.raleway_22 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #777;
+}
+
+.ralewaybold_52 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -2px;
+    color: white;
+}
+
+.ralewaybold_52_responsive {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10em;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -2px;
+    color: white;
+}
+
+.color {
+    color: $MenuActiveColor;
+}
+
+.raleway_18 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    color: $Font16_18_Color;
+}
+
+.ralewaybold_18_white {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color:white;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+}
+
+.creteround_14 {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Crete Round', serif;
+    font-style: italic;
+    text-transform: none;
+    color:white;
+}
+
+.creteround_22 {
+    display: block;
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Crete Round', serif;
+    font-style: italic;
+    text-transform: none;
+    color:white;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+    color: #555;
+}
+
+.lato_white {
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+.lato_888 {
+    font-family: 'Lato', sans-serif;
+    color: #888;
+    font-size: .875rem;
+}
+
+
+/**
+ * ===== Footer fonts ======
+ */
+
+ .footer_fonts {
+    font-family: 'Lato', sans-serif;
+    color: $FooterFont_Color;
+    font-size: .875rem;
+}

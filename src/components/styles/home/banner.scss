@@ -1,0 +1,203 @@
+/**
+ * ===== 16/3/2020 ======
+ * ===CREADED BY CHRIS===
+ * ==== BANNER STYLE ====
+ */
+
+@import "../variables.scss";
+@import "../mixin.scss";
+
+.banner_container {
+    height: 100vh;
+    width: 100%;
+}
+
+.parallax_banner {
+    height: 100vh;
+}
+
+.demo {
+    height: 100vw;
+    width: 100%;
+}
+
+.content {
+    width: 85%;
+}
+
+.bannerBtn {
+    height: 100px;
+    width: 412px;
+    border: 2px solid $Light_Color;
+    margin-top: 50px;
+    border-radius: 4px;
+    @include alignCenter;
+}
+
+.bannerBtn:hover {    
+    background-color: $Light_Color;
+    cursor: pointer;
+}
+
+.bannerBtn:hover div {
+    color: $BtnTxtHover_Color;
+}
+
+.bannerBtn:hover .MuiSvgIcon-root {
+    color: $BtnTxtHover_Color;
+}
+
+.apple {
+    height: 50px;
+}
+
+.responsive_banner {
+    display: none;
+}
+
+/**
+ * ===== banner responsive ======
+ */
+
+ @media (max-width:1100px) {
+    
+    .banner_container {
+        padding-top: 50px;
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+        @include alignCenter;
+    }
+
+    .responsive_banner {
+        display: flex;
+        height: 60vh;
+        width: 100%;        
+    }
+
+    .responsive_background {
+        height: 60vh;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .banner_content {
+        position: absolute;
+        top: 20%;
+        width: 70%;
+        left: 20%;
+    }
+
+    .banner_content .content {
+        font-size: 2em;
+    }
+
+    .bannerBtn {
+        height: 60px;
+        width: 250px;
+        border: 2px solid #EEE;
+        margin-top: 20px;
+    }
+
+    .banner_button_title {
+        font-size: 18px;
+    }
+    .banner_button_content {
+        display: none;
+    }
+ }
+
+@media (max-width: 1024px){
+    .banner_content .content {
+        font-size: 2em;
+    }
+
+    .banner_content{
+        top: 27%;
+    }
+    .bannerBtn {
+        height: 60px;
+        width: 300px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .banner_content {
+        position: absolute;
+        top: 24%;
+        width: 70%;
+        left: 26%;
+    }
+}
+
+ @media (max-width:414px) {
+    .banner_content .content {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.8em;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: -2px;
+        color: white;
+    }
+    .banner_content {
+        position: absolute;
+        top: 23%;
+        width: 80%;
+        left: 17%;
+    }
+    .bannerBtn {
+        height: 60px;
+        width: 280px;
+        margin-top: 20px;
+    }
+ }
+
+ @media (max-width: 375px) {
+    .banner_content .content {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.8em;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: -2px;
+        color: white;
+    }
+    .banner_content {
+        position: absolute;
+        top: 23%;
+        width: 70%;
+        left: 21%;
+    }
+    .bannerBtn {
+        height: 47px;
+        width: 207px;
+        border: 2px solid #EEE;
+        margin-top: 10px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner_button_title {
+        font-size: 11px;
+    }
+ }
+
+ @media (max-width: 360px) {
+
+    .banner_content {
+        position: absolute;
+        top: 20%;
+        width: 70%;
+        left: 21%;
+    }
+
+ }
+
+ @media (max-width: 320px) {
+    .banner_content .content {
+        font-size: 1.6em;
+    }
+ }

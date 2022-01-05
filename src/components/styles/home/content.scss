@@ -1,0 +1,108 @@
+/**
+ * ============= 16/3/2020 ============
+ * ==========CREADED BY CHRIS==========
+ * = HOME PAGE CONTENT SECTION STYLES =
+ */
+
+@import "../variables.scss";
+@import "../mixin.scss";
+@import "../styles.scss";
+
+
+.background {
+    position: absolute;
+    right: 0px;
+    bottom:0px;
+}
+
+.darklist_container {
+    background-color: $Dark_Color;
+}
+
+.dark_item_container {
+    display: flex;
+}
+
+.blue_icon {
+    width: 50px;
+    color:  $MenuActiveColor;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.card_img {
+    height: 100%;
+}
+
+.card_item {
+    width: 100%;
+    height: fit-content;
+    border-radius: 3px;
+    overflow: hidden;
+    -webkit-box-shadow: $CardItemShadow;
+    -moz-box-shadow: $CardItemShadow;
+    box-shadow: $CardItemShadow;
+}
+
+.card_item:hover {
+    -webkit-box-shadow: $CardItemHoverShadow;
+    -moz-box-shadow: $CardItemHoverShadow;
+    box-shadow: $CardItemHoverShadow;
+}
+
+.overlay_carousel {    
+    background-color: $CarouselOverlayColor;
+    z-index: 1;
+    @include carouselOverlayPosition;
+    @include flexcolumn;
+    @include alignCenter;
+}
+
+.round-image {
+    @include roundImage($roundImageStyle1...)
+}
+
+
+@media (max-width:1412px){
+    .background {
+        position: absolute;
+        width: 800px;
+        right: 0px;
+        bottom:0px;
+    }
+}
+
+@media (max-width:996px){
+    .background {
+        position: absolute;
+        width: 650px;
+        right: 0px;
+        bottom:0px;
+    }
+    .double_iphone {
+        width: 300px;
+    }
+}
+
+@media (max-width:770px){
+    .background {
+        position: absolute;
+        width: 500px;
+        right: 0px;
+        bottom:0px;
+    }
+    .double_iphone {
+        width: 200px;
+    }
+}
+
+@media (max-width:500px){
+    .background {
+        position: absolute;
+        width: 300px;
+        right: 0px;
+        bottom:0px;
+    }
+}
+
+
